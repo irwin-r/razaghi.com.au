@@ -7,6 +7,19 @@ module.exports = {
   plugins: [
     // "gatsby-plugin-eslint",
     "gatsby-plugin-transition-link",
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Karla`,
+          },
+          {
+            family: `Source Sans Pro`,
+          },
+        ],
+      },
+    },
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
