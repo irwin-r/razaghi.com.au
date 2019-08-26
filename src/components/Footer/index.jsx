@@ -10,7 +10,7 @@ import { getCopyrightYears } from "./utils";
 
 const FooterLink = ({ icon, title, url }) => (
   <a href={url} key={title} rel="noopener noreferrer" target="_blank" title={title}>
-    <FontAwesomeIcon icon={icon} />
+    <FontAwesomeIcon icon={icon} width="16" />
   </a>
 );
 

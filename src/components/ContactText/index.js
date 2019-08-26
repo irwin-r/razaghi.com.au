@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 const ContactText = styled.div`
+  padding: 0 1.5rem;
+
   & > p {
     font-size: 25px;
-    line-height: 49px;
+    line-height: 40px;
 
     & > a {
       position: relative;

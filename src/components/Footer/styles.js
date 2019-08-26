@@ -26,9 +26,13 @@ export const FooterLinksContainer = styled.div`
     &:hover {
       opacity: 1;
     }
+
+    & > svg {
+      max-width: 0.875em;
+    }
   }
 `;
 
 export const FooterText = styled.div`
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 `;

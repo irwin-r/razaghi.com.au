@@ -1,3 +1,4 @@
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React from "react";
 
 import ContactText from "../components/ContactText";
@@ -19,6 +20,7 @@ const SecondPage = () => (
       <p>
         Alternatively, you can give me a call on <a href="tel:+61419039382">+61 419 039 382</a>.
       </p>
+      <AniLink fade to="/">let's talk?</AniLink>
     </ContactText>
   </Layout>
 );
