@@ -4,8 +4,8 @@ const ContactText = styled.div`
   padding: 0 1.5rem;
 
   & > p {
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 45px;
 
     & > a {
       position: relative;

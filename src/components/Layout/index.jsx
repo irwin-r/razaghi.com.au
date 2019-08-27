@@ -3,6 +3,7 @@ import "normalize.css/normalize.css";
 import { ThemeProvider } from "styled-components";
 import PropTypes from "prop-types";
 import React from "react";
+import { TransitionPortal } from "gatsby-plugin-transition-link";
 
 import Footer from "../Footer";
 import { MainWrapper } from "../layoutComponents";
@@ -16,7 +17,9 @@ const Layout = ({ children }) => (
       <GlobalStyle />
       <MainWrapper>
         <main>{children}</main>
-        <Footer />
+        <TransitionPortal>
+          <Footer />
+        </TransitionPortal>
       </MainWrapper>
     </>
   </ThemeProvider>
