@@ -47,7 +47,12 @@ class Layout extends React.PureComponent {
         <GlobalStyle />
         <MainWrapper show={this.state.show}>
           <TransitionPortal>
-            <LoadingBar height={3} background="white" color="white" onRef={this.setLoadingBarRef} />
+            <LoadingBar
+              height={3}
+              background="#bbbbbb"
+              color="#bbbbbb"
+              onRef={this.setLoadingBarRef}
+            />
           </TransitionPortal>
           <main>{this.props.children}</main>
           <TransitionPortal>

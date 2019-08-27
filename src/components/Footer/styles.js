@@ -18,13 +18,12 @@ export const FooterLinksContainer = styled.div`
   margin-bottom: ${BOTTOM_MARGIN};
 
   & > a {
-    color: white;
+    color: #686868;
     margin: 5px;
-    opacity: 0.5;
-    transition: opacity 250ms ease-in-out;
+    transition: color 250ms ease-in-out;
 
     &:hover {
-      opacity: 1;
+      color: #bbbbbb;
     }
 
     & > svg {
