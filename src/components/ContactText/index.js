@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+
 import { START_TYPING_DELAY } from "../Layout/constants";
 
 const wave = keyframes`
