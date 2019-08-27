@@ -37,7 +37,11 @@ class Layout extends React.PureComponent {
   render = () => (
     <ThemeProvider theme={baseTheme}>
       <>
-        <Helmet defaultTitle="Irwin Razaghi" titleTemplate="%s - Irwin Razaghi">
+        <Helmet
+          defaultTitle="Irwin Razaghi"
+          htmlAttributes={{ lang: "en" }}
+          titleTemplate="%s - Irwin Razaghi"
+        >
           <meta name="description" content="Irwin Razaghi - Full Stack Software Developer" />
         </Helmet>
         <GlobalStyle />
