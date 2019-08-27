@@ -6,6 +6,7 @@ const prettierOptions = JSON.parse(
 );
 
 module.exports = {
+  parser: "babel-eslint",
   extends: ['airbnb', 'prettier', 'prettier/react'],
   plugins: ['prettier', 'react', 'react-hooks', 'jsx-a11y'],
   env: {
@@ -23,6 +24,8 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': ['error', prettierOptions],
-    "react/jsx-props-no-spreading": "off"
+    "react/destructuring-assignment": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/state-in-constructor": "off"
   }
 };
