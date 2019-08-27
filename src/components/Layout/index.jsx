@@ -1,5 +1,6 @@
 import "normalize.css/normalize.css";
 
+import { Helmet } from "react-helmet";
 import { ThemeProvider } from "styled-components";
 import LoadingBar from "react-top-loading-bar";
 import PropTypes from "prop-types";
@@ -36,6 +37,9 @@ class Layout extends React.PureComponent {
   render = () => (
     <ThemeProvider theme={baseTheme}>
       <>
+        <Helmet defaultTitle="Irwin Razaghi" titleTemplate="%s - Irwin Razaghi">
+          <meta name="description" content="Irwin Razaghi - Full Stack Software Developer" />
+        </Helmet>
         <GlobalStyle />
         <MainWrapper show={this.state.show}>
           <TransitionPortal>

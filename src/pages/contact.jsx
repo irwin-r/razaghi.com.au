@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import React from "react";
 
 import AniLink from "../components/AniLink";
@@ -6,6 +7,9 @@ import Layout from "../components/Layout";
 
 const SecondPage = () => (
   <Layout>
+    <Helmet>
+      <title>Contact</title>
+    </Helmet>
     <ContactText>
       <p>
         Hey there!{" "}
