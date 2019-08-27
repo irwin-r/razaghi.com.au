@@ -78,7 +78,7 @@ const swipe = ({ node, exit, direction, top, triggerName, entryOffset }) => {
     .set(node, { overflowY: "initial" });
 };
 
-export default function AniLink({...props }) {
+export default function AniLink(props) {
   const direction = "up";
   const top = "exit";
   const exitLength = 0.5;

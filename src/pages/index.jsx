@@ -1,7 +1,7 @@
 import React from "react";
 
-import AniLink from "../components/AniLink";
 import Layout from "../components/Layout";
+import Link from "../components/Link";
 import Taglines from "../components/Tagline";
 
 const TAGLINES = [
@@ -26,9 +26,8 @@ const IndexPage = () => (
     </h1>
     <Taglines lines={TAGLINES} />
     <br />
-    <AniLink swipe direction="up" to="/contact">
-      let&apos;s talk?
-    </AniLink>
+    <br />
+    <Link to="/contact">let&apos;s talk?</Link>
   </Layout>
 );
 
