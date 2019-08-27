@@ -81,7 +81,7 @@ const swipe = ({ node, exit, direction, top, triggerName, entryOffset }) => {
 export default function AniLink({...props }) {
   const direction = "up";
   const top = "exit";
-  const exitLength = 0.7;
+  const exitLength = 0.5;
   const entryLength = exitLength / 3.5;
   const entryOffset = 0;
   const entryZ = top === "entry" ? 1 : 0;

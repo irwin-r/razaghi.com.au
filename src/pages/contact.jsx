@@ -18,8 +18,8 @@ const SecondPage = () => (
         </span>
       </p>
       <p>
-        I&apos;m always keen to connect with new people, so if you&apos;d like to get in touch, feel
-        free to email me at <a href="mailto:irwin@razaghi.com.au">irwin@razaghi.com.au</a>.
+        I&apos;m always keen to connect with new people, so if you&apos;d like to get in touch
+        definitely email me at <a href="mailto:irwin@razaghi.com.au">irwin@razaghi.com.au</a>.
       </p>
       <p>
         Alternatively, you can give me a call on <a href="tel:+61419039382">+61 419 039 382</a>.

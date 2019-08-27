@@ -15,8 +15,30 @@ const ContactText = styled.div`
   padding: 0 1.5rem;
 
   & > p {
-    font-size: 30px;
-    line-height: 45px;
+    @media only screen and (min-width: 300px) {
+      font-size: 22px;
+      line-height: 35px;
+    }
+
+    @media only screen and (min-width: 350px) {
+      font-size: 25px;
+      line-height: 37.5px;
+    }
+
+    @media only screen and (min-width: 375px) and (min-height: 650px) {
+      font-size: 27px;
+      line-height: 38px;
+    }
+
+    @media only screen and (min-width: 375px) and (min-height: 700px) {
+      font-size: 29px;
+      line-height: 42.5px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      font-size: 36px;
+      line-height: 55px;
+    }
 
     & > span[aria-label="Wave"] {
       animation-name: ${wave};

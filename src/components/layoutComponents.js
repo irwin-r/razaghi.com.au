@@ -4,7 +4,7 @@ import { LAYOUT_FADE_IN_TIME } from "./Layout/constants";
 export const MainWrapper = styled.div`
   align-items: center;
   display: flex;
-  height: 100vh;
+  height: 87.5vh;
   justify-content: center;
   width: 100vw;
 
