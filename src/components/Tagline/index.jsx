@@ -5,6 +5,7 @@ import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 
 import { Tagline } from "./styles";
+import { START_TYPING_DELAY } from "../Layout/constants";
 
 function Taglines({ lines }) {
   const [count, setCount] = useState(1);
@@ -22,7 +23,7 @@ function Taglines({ lines }) {
   }
 
   return (
-    <Typist onTypingDone={() => setCount(0)}>
+    <Typist onTypingDone={() => setCount(0)} startDelay={START_TYPING_DELAY}>
       {lines.map((line, index) => (
         // eslint-disable-next-line react/no-array-index-key
         <Tagline key={`tagline-${index}`}>

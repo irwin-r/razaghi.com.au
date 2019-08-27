@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { LAYOUT_FADE_IN_TIME } from "./Layout/constants";
 
 export const MainWrapper = styled.div`
   align-items: center;
@@ -10,6 +11,8 @@ export const MainWrapper = styled.div`
   & > main {
     min-width: 300px;
     max-width: 600px;
+    opacity: ${({ show }) => (show ? 1 : 0)};
+    transition: opacity ${LAYOUT_FADE_IN_TIME}ms ease-in-out;
   }
 `;
 

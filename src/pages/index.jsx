@@ -1,6 +1,6 @@
-import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React from "react";
 
+import AniLink from "../components/AniLink";
 import Layout from "../components/Layout";
 import Taglines from "../components/Tagline";
 
@@ -14,11 +14,20 @@ const TAGLINES = [
 
 const IndexPage = () => (
   <Layout>
-    <h1 style={{ fontSize: "36px", lineHeight: "49px", marginBlockStart: 0, marginBlockEnd: "0.5rem" }}>Irwin Razaghi</h1>
+    <h1
+      style={{
+        fontSize: "36px",
+        lineHeight: "49px",
+        marginBlockStart: 0,
+        marginBlockEnd: "0.5rem",
+      }}
+    >
+      Irwin Razaghi
+    </h1>
     <Taglines lines={TAGLINES} />
     <br />
     <AniLink swipe direction="up" to="/contact">
-      let's talk?
+      let&apos;s talk?
     </AniLink>
   </Layout>
 );

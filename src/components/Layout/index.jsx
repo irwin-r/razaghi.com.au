@@ -1,6 +1,7 @@
 import "normalize.css/normalize.css";
 
 import { ThemeProvider } from "styled-components";
+import LoadingBar from "react-top-loading-bar";
 import PropTypes from "prop-types";
 import React from "react";
 import { TransitionPortal } from "gatsby-plugin-transition-link";
@@ -10,20 +11,45 @@ import { MainWrapper } from "../layoutComponents";
 import { baseTheme } from "../../themes";
 
 import { GlobalStyle } from "./globalStyle";
+import { COMPLETE_PROGRESS_BAR_DELAY, SHOW_PROGRESS_BAR_DELAY } from "./constants";
 
-const Layout = ({ children }) => (
-  <ThemeProvider theme={baseTheme}>
-    <>
-      <GlobalStyle />
-      <MainWrapper>
-        <main>{children}</main>
-        <TransitionPortal>
-          <Footer />
-        </TransitionPortal>
-      </MainWrapper>
-    </>
-  </ThemeProvider>
-);
+class Layout extends React.PureComponent {
+  state = { show: false };
+
+  componentDidMount() {
+    this.loadingBar.staticStart(-1);
+
+    setTimeout(() => {
+      this.loadingBar.add(20);
+    }, SHOW_PROGRESS_BAR_DELAY);
+
+    setTimeout(() => {
+      this.loadingBar.complete();
+      this.setState({ show: true });
+    }, COMPLETE_PROGRESS_BAR_DELAY);
+  }
+
+  setLoadingBarRef = ref => {
+    this.loadingBar = ref;
+  };
+
+  render = () => (
+    <ThemeProvider theme={baseTheme}>
+      <>
+        <GlobalStyle />
+        <MainWrapper show={this.state.show}>
+          <TransitionPortal>
+            <LoadingBar height={3} background="white" color="white" onRef={this.setLoadingBarRef} />
+          </TransitionPortal>
+          <main>{this.props.children}</main>
+          <TransitionPortal>
+            <Footer />
+          </TransitionPortal>
+        </MainWrapper>
+      </>
+    </ThemeProvider>
+  );
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
