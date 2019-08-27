@@ -21,17 +21,17 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: "razaghi.com.au",
-        short_name: "razaghi.com.au",
-        start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
-        display: "minimal-ui",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-manifest",
+    //   options: {
+    //     name: "razaghi.com.au",
+    //     short_name: "razaghi.com.au",
+    //     start_url: "/",
+    //     background_color: "#663399",
+    //     theme_color: "#663399",
+    //     display: "minimal-ui",
+    //   },
+    // },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-offline",
   ],
