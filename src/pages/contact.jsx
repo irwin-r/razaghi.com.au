@@ -22,7 +22,7 @@ const SecondPage = () => (
         definitely email me at <a href="mailto:irwin@razaghi.com.au">irwin@razaghi.com.au</a>.
       </p>
       <p>
-        Alternatively, you can give me a call on <a href="tel:+61280021217">+61 02 8002 1217</a>.
+        Alternatively, you can give me a call on <a href="tel:+61280021217">(02) 8002 1217</a>.
       </p>
       <Link to="/">back</Link>
     </ContactText>
